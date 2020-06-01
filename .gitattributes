@@ -1,3 +1,4 @@
-*.HTML linguist-detectable=false
+*.htmllinguist-detectable=false
 *.js linguist-detectable=true
 *.python linguist-detectable = true
+*.htm inguist-detectable=false
