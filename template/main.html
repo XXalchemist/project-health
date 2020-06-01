@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'css/Features-Boxed.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-Basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/Team-Grid.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button">
+            <div class="container"><a class="navbar-brand text-uppercase text-primary"  href = '#' src="fa-fa-2" style="font-size:21px;background-size:contain;background-repeat:round;color:rgba(244,244,244,0.88);">Health Report.ai<i class="icon ion-android-clipboard d-inline-block" style="width:23px;padding:0px;background-color:rgba(238,17,17,0);margin:10px;height:26px;"></i></a>
+                <button
+                    class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item" ><a class="nav-link active" href="{% url 'homepage' %}"><strong>Home</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link" href="{% url 'information' %}"><strong>Information</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link" href= "{% url 'gallery' %}"><strong>Gallery</strong></a></li>
+                        </ul><span class="navbar-text actions"> <a class="btn btn-primary btn-lg action-button" role="button" href="{% url 'upload_img' %}">Upload <strong>Image</strong></a></span></div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-left text-light bg-light d-block d-flex visible" style="background-color:rgba(255,255,255,0.65);background-image:url(&quot;media/img/ra_1.jpg&quot;);background-position:left;background-size:cover;color:rgba(228,28,28,0.93);font-size:50px;background-repeat:repeat-x;padding:100px;margin:0px;">DEEP LEARNING PROJECT ON HEALTHCARE</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-boxed">
+        <div class="container">
+            <h2 class="text-center" style="padding:25px;height:7px;">WE HAVE THESE FEATURES&nbsp;</h2>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-map-marker icon"></i>
+                        <h3 class="name">Works everywhere</h3>
+                        <p class="description">As long as computer is provided, it will work like a charm.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-clock-o icon"></i>
+                        <h3 class="name">Always available</h3>
+                        <p class="description">Availability is high compare to radiologist.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-list-alt icon"></i>
+                        <h3 class="name">Precision</h3>
+                        <p class="description">Have accuracy between 75 % to 85 %.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-leaf icon"></i>
+                        <h3 class="name">Organic </h3>
+                        <p class="description">More disease diagnosis will be added soon.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-plane icon"></i>
+                        <h3 class="name">Fast </h3>
+                        <p class="description">Because of Transfer Learning , model prediction is fast.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-phone icon"></i>
+                        <h3 class="name">Support</h3>
+                        <p class="description">24 x 7 call support to provide easy to use experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team Members</h2>
+                <p class="text-center">Our Team Members :-  &nbsp; </p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style = "background-image: url('media/img/a.jpg');">
+                        <div class="cover">
+                            <h3 class="name">Narayan Krishna</h3>
+                            <p class="title">Developer(ML)</p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style = "background-image: url('media/img/b.jpg');">
+                        <div class="cover">
+                            <h3 class="name">Suraj</h3>
+                            <p class="title"> Web Desighner </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style = "background-image: url('media/img/c.jpg');">
+                        <div class="cover">
+                            <h3 class="name">Shubham</h3>
+                            <p class="title">Bootstrap </p>
+                            <div class="social" ><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style = "background-image: url('media/img/d.jpg');" >
+                        <div class="cover">
+                            <h3 class="name">Shubham Raj</h3>
+                            <p class="title">Developer</p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram" style="color:rgb(2,25,30);"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color:rgba(224,216,22,0.62);"></i></a><a href="#"><i class="icon ion-social-twitter" style="color:rgb(2,125,248);"></i></a>
+                <a
+                    href="#" style="color:rgb(0,51,231);"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright"><strong>Health Report.ai © 2020</strong></p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

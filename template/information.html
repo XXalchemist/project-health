@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href='{% static "bootstrap/css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href='{% static "css/Article-Clean.css" %}'>
+    <link rel="stylesheet" href='{% static "css/styles.css" %}'>
+    <link rel="stylesheet" href="{% static 'css/Footer-Basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button">
+            <div class="container"><a class="navbar-brand text-uppercase text-primary" href="#" src="fa-fa-2" style="font-size:21px;background-size:contain;background-repeat:round;color:rgba(244,244,244,0.88);">Health Report.ai<i class="icon ion-android-clipboard d-inline-block" style="width:23px;padding:0px;background-color:rgba(238,17,17,0);margin:10px;height:26px;"></i></a>
+                <button
+                    class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item" ><a class="nav-link " href="{% url 'homepage' %}"><strong>Home</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link active"  href="{% url 'information' %}"><strong>Information</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link " href="{% url 'gallery' %}"><strong>Gallery</strong></a></li>
+                        </ul><span class="navbar-text actions"> <a class="btn btn-primary btn-lg action-button" role="button" href="{% url 'upload_img' %}">Upload <strong>Image</strong></a></span></div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <br>
+        <br>
+        
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Information about Pneumonia</h1><img class="img-thumbnail img-fluid" src="media/img/ra_3.jpg" style="width:702px;"></div>
+                    <div class="text">
+                        <p>Pneumonia is an infection of the lungs with a range of possible causes. It can be a serious and life-threatening disease.<br>It normally starts with a bacterial, viral, or fungal infection.The lungs become inflamed, and the tiny
+                            air sacs, or alveoli, inside the lungs fill up with fluid.Pneumonia can occur in young and healthy people, but it is most dangerous for older adults, infants, people with other diseases, and those with impaired immune systems.In
+                            the United States (U.S.), around 1 million people are treated in the hospital for pneumonia each year, and around 50,000 die from the disease.<br><br></p>
+                        <p>Pneumonia is an infection of the lungs that can cause mild to severe illness in people of all ages.<br>Those at high risk for pneumonia include older adults, the very young, and people with underlying health problems.<br></p>
+                        <h2>Symptoms</h2>
+                        <p>The first symptoms of pneumonia usually resemble those of a cold or flu.&nbsp;The person then develops a high fever&nbsp;chills, and cough with sputum.<br></p>
+                        <figure><img class="img-thumbnail img-fluid figure-img" src="media/img/Pneumonia-Symptoms-and-Causes-722x406.jpg">
+                            <figcaption>Pneumonia is a serious lung infection with a number of possible causes.<br></figcaption>
+                        </figure>
+                        <p>Common symptoms&nbsp;<a href="http://www.lung.org/lung-health-and-diseases/lung-disease-lookup/pneumonia/symptoms-causes-and-risk.html">i</a>nclude:<br></p>
+                        <ul>
+                            <li>cough</li>
+                            <li>rusty or green phlegm, or sputum, coughed up from lungs<br></li>
+                            <li>fast breathing and shortness of breath<br></li>
+                            <li>fast heartbeat<br></li>
+                            <li>nausea and vomiting<br></li>
+                        </ul>
+                        <h2>Precautions</h2>
+                        <p>Treatment depends on the type and severity of the pneumonia.<br></p>
+                        <ul>
+                            <li>Bacterial types of pneumonia are usually treated with antibiotics.<br></li>
+                            <li>Fungal types of pneumonia are usually treated with antifungal medications.<br></li>
+                            <li>Viral types of pneumonia are usually treated with rest and plenty of fluids. Antiviral medications can be used in influenza.<br></li>
+                        </ul>
+                        <p>Doctors commonly prescribe over-the-counter (OTC) medications to help manage the symptoms of pneumonia. These include treatments for reducing fever, reducing aches and pains, and suppressing coughs.In addition, it is crucial to
+                            rest and drink plenty of fluids. Staying hydrated helps to thin out thick phlegm and mucus, making it easier to cough up.Hospitalization for pneumonia may be required if symptoms are especially bad or if an individual has a
+                            weakened immune system or other serious illnesses.<br></p>
+                        <h2>Diagnosis</h2>
+                    </div>
+                    <p>A doctor will ask&nbsp;about symptoms and medical history and will carry out a physical examination.An X-ray can show if there is any damage to the lungs.They may suspect pneumonia if they hear coarse breathing, wheezing, crackling,
+                        or decreased breath sounds when listening to the chest through a stethoscope.The doctor may also check the oxygen levels in the blood with a painless monitor on the finger called a pulse oximeter.<strong>Chest X-rays</strong>&nbsp;can
+                        confirm a pneumonia diagnosis and show which areas of the lungs are affected.<strong>A CT scan</strong>&nbsp;of the chest may provide more detailed information.<strong>Blood tests</strong>&nbsp;measure the white blood cell count.This
+                        helps determine how severe the infection is, and whether a bacteria, virus, or fungus is the likely cause.<strong>Blood cultures</strong>&nbsp;may reveal whether the microorganism from the lungs has spread into the blood stream.<strong>An arterial blood gas (ABG)</strong>&nbsp;blood
+                        test may provide a more accurate reading of the body’s oxygen and carbon dioxide levels and other factors.<strong>A sputum analysis</strong>&nbsp;can determine which organism is causing the pneumonia.<strong>A bronchoscopy</strong>&nbsp;is
+                        sometimes used for further investigation.A thin, flexible, and lighted tube called a bronchoscope is passed down into the lungs. This enables the doctor to examine directly the infected parts of the airways and lungs. The patient
+                        is under anesthetic.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram" style="color:rgb(2,25,30);"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color:rgba(224,216,22,0.62);"></i></a><a href="#"><i class="icon ion-social-twitter" style="color:rgb(2,125,248);"></i></a>
+                <a
+                    href="#" style="color:rgb(0,51,231);"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright"><strong>Health Report.ai © 2020</strong></p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src='{% static "js/jquery.min.js" %}'></script>
+    <script src='{% static "bootstrap/js/bootstrap.min.js" %}'></script>
+</body>
+
+</html>

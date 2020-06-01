@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/Lightbox-Gallery.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-Basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    
+ 
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button">
+            <div class="container"><a class="navbar-brand text-uppercase text-primary" href="#" src="fa-fa-2" style="font-size:21px;background-size:contain;background-repeat:round;color:rgba(244,244,244,0.88);">Health Report.ai<i class="icon ion-android-clipboard d-inline-block" style="width:23px;padding:0px;background-color:rgba(238,17,17,0);margin:10px;height:26px;"></i></a>
+                <button
+                    class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link dark " href="{% url 'homepage' %}"><strong>Home</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link dark" href="{% url 'information' %}"><strong>Information</strong></a></li>
+                            <li class="nav-item" ><a class="nav-link active" href= "{% url 'gallery' %}"><strong>Gallery</strong></a></li>
+                        </ul><span class="navbar-text actions"> <a class="btn btn-primary btn-lg action-button" role="button" href="{% url 'upload_img' %}">Upload <strong>Image</strong></a></span></div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Image Gallery</h2>
+                <p class="text-center">Some images as uploaded by the users from different region</p>
+            </div>
+            <div class="row d-flex photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item ali"><a href= "media/img/7.jpg" data-lightbox="photos"><img class="img-fluid" src="media/img/7.jpg"></a></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram" style="color:rgb(2,25,30);"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color:rgba(224,216,22,0.62);"></i></a><a href="#"><i class="icon ion-social-twitter" style="color:rgb(2,125,248);"></i></a>
+                <a
+                    href="#" style="color:rgb(0,51,231);"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright"><strong>Health Report.ai © 2020</strong></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>

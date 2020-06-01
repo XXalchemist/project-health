@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'css/Footer-Basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+
+</head>
+<body>
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button">
+                <div class="container"><a class="navbar-brand text-uppercase text-primary" href="#" src="fa-fa-2" style="font-size:21px;background-size:contain;background-repeat:round;color:rgba(244,244,244,0.88);">Health Report.ai<i class="icon ion-android-clipboard d-inline-block" style="width:23px;padding:0px;background-color:rgba(238,17,17,0);margin:10px;height:26px;"></i></a>
+                    <button
+                        class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <ul class="nav navbar-nav mr-auto">
+                                <li class="nav-item" ></li><a class="nav-link " href="{% url 'homepage' %}"><strong>Home</strong></a></li>
+                                <li class="nav-item" ><a class="nav-link " href="{% url 'information' %}"><strong>Information</strong></a></li>
+                                <li class="nav-item" ><a class="nav-link " href="{% url 'gallery' %}"><strong>Gallery</strong></a></li>
+                            </ul>
+            </nav>
+        </div>
+    
+        <div>
+ 
+
+        <br>
+        <br>
+    
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img class="img-fluid img-thumbnail" src= "{{filePathName}}">
+                    </div>
+                    <div class="col-md-6 m-auto">
+                        <center>
+                        <h2 class="text-center text-primary" style="margin-top:0px;">Upload Image</h2>
+                        <h5 class="text-center">Check wheither you have Pneumonia or not.</h5>
+                        <br>
+                        <br>
+                        <form method="post" enctype="multipart/form-data" action="predictImage">
+        
+                         {% csrf_token %}
+                        
+                        <label for="fname">Upload Image File Here:</label>  <input name="filePath" type="file">
+                        <br>
+                        <br>
+                        <br>
+                        <h4>Through Deep Learning we got something that can help us ("0")/  </h4> <br>
+                        <h4>  {{predictedLabel}} </h4>
+                    
+                        <br>
+                        <br>
+                        <button class="btn btn-outline-info btn-lg" type="submit">Upload</button> 
+                     
+                    </form>
+                </center>   
+                    </div>
+                    <br>
+                    <br>
+        <div class="col-md-12 footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram" style="color:rgb(2,25,30);"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color:rgba(224,216,22,0.62);"></i></a><a href="#"><i class="icon ion-social-twitter" style="color:rgb(2,125,248);"></i></a>
+                    <a
+                        href="#" style="color:rgb(0,51,231);"><i class="icon ion-social-facebook"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright"><strong>Health Report.ai © 2020</strong></p>
+            </footer>
+        </div>
+ </body>
+</html>
